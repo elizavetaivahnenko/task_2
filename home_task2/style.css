@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(91, 160, 178);
+}
+.mainCardContainer{
+    width: 40%;
+    max-width: 400px;
+    height: 65vh;
+    border: 2px solid white;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    /* подскажите, пожалуйста, как задать отступ между белой граници
+    и самой карточкой*/
+}
+.colorCardContainer{
+    background-color: rgb(229, 143, 73);
+    width: 100%;
+    height: 40%;
+}
+.infoCardContainer{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 60%;
+    position: absolute; /*когда задала абсолют то цвет полностью
+    заполнил блок с текстом а если задаю релатив то цвет начинает сползать
+     подскажите, правильно ли задавать абсолют?*/
+   
+    line-height: normal;
+
+}
+.textCardContainer{
+   text-align: center;
+   margin-top: 80px;
+    
+}
+
+.imageCardContainer{
+    background-repeat: no-repeat;
+    background-image: url(https://starwars-galaxy.ru/800/600/https/slovnet.ru/wp-content/uploads/2018/10/17-50.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    /* много чего не получается применять с позиционированием, и при сжатии
+    экрана картинка бегает*/
+}
+.div.infoCardContainer p{
+    position: absolute;
+    
+    /*хотела задать код для всех параграфов в infoCardContainer почемуто не работает */
+}
+
+.userName{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    /* выставила текст в две строки при помощи font-size
+    изначально хотела задать максимальную ширину но текст вообще
+    в лево съехал. как правильно это сделать?*/
+    
+     
+}
+.userJob{ color: gray;
+    margin-bottom: 25px;  
+}
+.textButtonContainer{
+    border: 1px black solid;
+    width: 60px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
